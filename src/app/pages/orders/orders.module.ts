@@ -10,7 +10,17 @@ import { OrderDetailsComponent } from './order-details/order-details.component';
 const routes: Routes = [
   {
     path: "",
-    component: OrdersComponent
+    component: OrdersComponent,
+    children: [
+      {
+        path: "",
+        component: OrdersListingComponent
+      },
+      {
+        path: "details",
+        component: OrderDetailsComponent
+      }
+    ]
   }
 ];
 
