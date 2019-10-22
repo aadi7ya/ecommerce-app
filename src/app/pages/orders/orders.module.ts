@@ -4,6 +4,8 @@ import { Routes, RouterModule } from '@angular/router';
 
 // Components
 import { OrdersComponent } from './orders.component';
+import { OrdersListingComponent } from './orders-listing/orders-listing.component';
+import { OrderDetailsComponent } from './order-details/order-details.component';
 
 const routes: Routes = [
   {
@@ -14,7 +16,9 @@ const routes: Routes = [
 
 @NgModule({
   declarations: [
-    OrdersComponent
+    OrdersComponent,
+    OrdersListingComponent,
+    OrderDetailsComponent
   ],
   imports: [
     RouterModule.forChild(routes),
