@@ -1,0 +1,32 @@
+<div class="app-header">
+  <nav>
+    <div class="logo">RB</div>
+    <div class="navigation">
+      <ul>
+        <li *ngFor="let link of links">
+          <a href="javascript:;" routerLink="/home" routerDirection="root">
+            {{ link.name }}&nbsp;
+          </a>
+        </li>
+
+        <li *ngIf="!session">
+          <a href="javascript:;" routerLink="/login" routerDirection="root">
+            Login
+          </a>
+        </li>
+
+        <li *ngIf="!session">
+          <a href="javascript:;" routerLink="/registration" routerDirection="root">
+            Sign Up
+          </a>
+        </li>
+
+        <li *ngIf="session">
+          <a href="javascript:;" routerLink="/profile" routerDirection="root">
+            Profile
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
