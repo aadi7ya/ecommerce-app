@@ -4,6 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 // Components
 import { HomeComponent } from './home.component';
+import { TestimonialsComponent } from './testimonials/testimonials.component';
 
 const routes: Routes = [
   {
@@ -14,7 +15,8 @@ const routes: Routes = [
 
 @NgModule({
   declarations: [
-    HomeComponent
+    HomeComponent,
+    TestimonialsComponent
   ],
   imports: [
     RouterModule.forChild(routes),
