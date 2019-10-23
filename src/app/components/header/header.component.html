@@ -4,26 +4,8 @@
     <div class="navigation">
       <ul>
         <li *ngFor="let link of links">
-          <a href="javascript:;" routerLink="/home" routerDirection="root">
-            {{ link.name }}&nbsp;
-          </a>
-        </li>
-
-        <li *ngIf="!session">
-          <a href="javascript:;" routerLink="/login" routerDirection="root">
-            Login
-          </a>
-        </li>
-
-        <li *ngIf="!session">
-          <a href="javascript:;" routerLink="/registration" routerDirection="root">
-            Sign Up
-          </a>
-        </li>
-
-        <li *ngIf="session">
-          <a href="javascript:;" routerLink="/profile" routerDirection="root">
-            Profile
+          <a href="javascript:;" [routerLink]="link.path" routerDirection="root">
+            {{ link.name }}
           </a>
         </li>
       </ul>
