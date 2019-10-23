@@ -19,6 +19,9 @@ const routes: Routes = [
     path: "profile", loadChildren: "./pages/profile/profile.module#ProfileModule"
   },
   {
+    path: "products", loadChildren: "./pages/products/products.module#ProductsModule"
+  },
+  {
     path: "orders", loadChildren: "./pages/orders/orders.module#OrdersModule"
   },
   {
@@ -30,6 +33,9 @@ const routes: Routes = [
   {
     path: "page-not-found", loadChildren: "./pages/page-not-found/page-not-found.module#PageNotFoundModule"
   },
+  {
+    path: "**", redirectTo: "page-not-found"
+  }
 ];
 
 @NgModule({
