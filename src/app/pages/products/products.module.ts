@@ -7,11 +7,10 @@ import { ProductsComponent } from './products.component';
 
 const routes: Routes = [
   {
-    path: "info",
+    path: "",
     component: ProductsComponent
   }
 ]
-
 
 @NgModule({
   declarations: [
