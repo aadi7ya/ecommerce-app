@@ -34,7 +34,7 @@ const routes: Routes = [
     path: "page-not-found", loadChildren: "./pages/page-not-found/page-not-found.module#PageNotFoundModule"
   },
   {
-    path: "", redirectTo: "page-not-found"
+    path: "**", redirectTo: "page-not-found"
   }
 ];
 
